@@ -1,0 +1,84 @@
+## Prerequisites
+```R
+# Required packages
+library(fda)
+library(splines)
+library(splines2)
+library(dplyr)
+library(magrittr)
+library(caret)
+library(quadprog)
+library(ggplot2)
+library(ggpubr)
+library(tidyr)
+library(mgcv)
+library(scam)
+library(censReg)
+library(tidyverse)
+library(patchwork)
+library(MASS)
+library(readxl)
+library(pdftools)
+
+# Load and filter data
+datfull <- read.csv("updated NACC dataset 9.17.21.csv")
+datfull %<>% 
+  filter(NACCUDSD==1) %>% # Normal cognition
+  filter(CDRGLOB==0) %>% # No impairment
+  filter(EDUC!=99 & EDUC>=5) %>% # Valid education data
+  filter(MOCACOMP==1 | CRAFTVRS %!in% c(-4,95:98))
+
+# Data transformations
+datfull %<>% 
+  mutate(SEX = 2-SEX) %>% # Sex coding
+  mutate(RACEETHwhitenonhispanic = ifelse(RACE==1 & HISPANIC==0, 1,0),
+         RACEETHblacknonhispanic = ifelse(RACE==2 & HISPANIC==0, 1,0))
+
+# Age truncation
+datfull %<>% 
+  mutate(NACCAGE = ifelse(NACCAGE<=40,40,NACCAGE)) %>%
+  mutate(NACCAGE = ifelse(NACCAGE>=95,95,NACCAGE))
+
+# Process each cognitive test
+for(indx in 1:length(varset)) {
+  var_name = varset[indx]
+  
+  # Create output directory
+  dir.create(paste0("Results0209/",var_name), recursive = TRUE)
+  
+  # Box-Cox transformation
+  bc <- boxcox(lm(dat[[var_name]] ~ 1))
+  best_lambda <- bc$x[which.max(bc$y)]
+  
+  # Fit models
+  Model <- scam(foo ~ s(NACCAGE,bs=agedrn) + EDUC + SEX + 
+               NACCAGE:RACE_model + RACE_model, data=dat)
+  
+  # Generate predictions and plots
+  combined_plot <- p1 + p2 + p3 + p4 +
+    plot_layout(ncol = 2) +
+    plot_annotation(title = paste("Results for", var_name))
+  
+  # Save results
+  ggsave(filename = paste0("Results0209/", var_name, "/combined_plots.pdf"),
+         plot = combined_plot,
+         width = 16,
+         height = 15)
+}
+
+# Create demographic combinations
+age = 40:95
+educ = 10:20
+sex = 0:1
+race = c("White", "Black")
+datout <- expand.grid(NACCAGE = age, EDUC = educ, SEX = sex, RACE = race)
+
+# Generate predictions
+datout$mean.adj <- NA
+datout$sd.adj <- NA
+datout$mean.adj[datout$RACE == "White"] <- predict(john, newdata = datout_white)
+datout$sd.adj[datout$RACE == "White"] <- predict(res_mod1t, newdata = datout_white)
+
+# Save lookup tables
+write.csv(datout, paste0("Results_t/", var_name, 
+          "/Zscore_lookup_transformed.csv"), row.names = FALSE)
