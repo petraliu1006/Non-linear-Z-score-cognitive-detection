@@ -1,0 +1,48 @@
+**Acknowledgments**
+
+The NACC database is funded by NIA/NIH Grant U24 AG072122. NACC data are contributed by the NIA-funded ADRCs: P30 AG062429 (PI James Brewer, MD, PhD), P30 AG066468 (PI Oscar Lopez, MD), P30 AG062421 (PI Bradley Hyman, MD, PhD), P30 AG066509 (PI Thomas Grabowski, MD), P30 AG066514 (PI Mary Sano, PhD), P30 AG066530 (PI Helena Chui, MD), P30 AG066507 (PI Marilyn Albert, PhD), P30 AG066444 (PI David Holtzman, MD), P30 AG066518 (PI Lisa Silbert, MD, MCR), P30 AG066512 (PI Thomas Wisniewski, MD), P30 AG066462 (PI Scott Small, MD), P30 AG072979 (PI David Wolk, MD), P30 AG072972 (PI Charles DeCarli, MD), P30 AG072976 (PI Andrew Saykin, PsyD), P30 AG072975 (PI Julie A. Schneider, MD, MS), P30 AG072978 (PI Ann McKee, MD), P30 AG072977 (PI Robert Vassar, PhD), P30 AG066519 (PI Frank LaFerla, PhD), P30 AG062677 (PI Ronald Petersen, MD, PhD), P30 AG079280 (PI Jessica Langbaum, PhD), P30 AG062422 (PI Gil Rabinovici, MD), P30 AG066511 (PI Allan Levey, MD, PhD), P30 AG072946 (PI Linda Van Eldik, PhD), P30 AG062715 (PI Sanjay Asthana, MD, FRCP), P30 AG072973 (PI Russell Swerdlow, MD), P30 AG066506 (PI Glenn Smith, PhD, ABPP), P30 AG066508 (PI Stephen Strittmatter, MD, PhD), P30 AG066515 (PI Victor Henderson, MD, MS), P30 AG072947 (PI Suzanne Craft, PhD), P30 AG072931 (PI Henry Paulson, MD, PhD), P30 AG066546 (PI Sudha Seshadri, MD), P30 AG086401 (PI Erik Roberson, MD, PhD), P30 AG086404 (PI Gary Rosenberg, MD), P20 AG068082 (PI Angela Jefferson, PhD), P30 AG072958 (PI Heather Whitson, MD), P30 AG072959 (PI James Leverenz, MD). 
+
+ 
+
+ 
+# References 
+
+[1] DeVore GR. Computing the Z Score and Centiles for Cross-sectional Analysis: A Practical Approach. J Ultrasound Med 2017;36:459-473. 
+
+[2] Stasenko A, Jacobs DM, Salmon DP, Gollan TH. The Multilingual Naming Test (MINT) as a Measure of Picture Naming Ability in Alzheimer’s Disease. J Int Neuropsychol Soc 2019;25:821-833. 
+
+[3] Curtis AE, Smith TA, Ziganshin BA, Elefteriades JA. The mystery of the Z-score. Aorta 2016;4:124-130. 
+
+[4] Kornak J, Fields J, Kremers W, Farmer S, Heuer HW, Forsberg L, et al. Nonlinear Z‐score modeling for improved detection of cognitive abnormality. Alzheimers Dement 2019;11:797-808. 
+
+[5] Gordon E, Rohrer JD, Fox NC. Advances in neuroimaging in frontotemporal dementia. J Neurochem 2016;138:193-210. 
+
+[6] McCollum L, Karlawish J. Cognitive Impairment Evaluation and Management. Med Clin North Am 2020;104:807-825. 
+
+[7] Cao Q, Wang T, Gao J, Li X, Yang K, Liu X. The Prevalence of Dementia: A Systematic Review and Meta-Analysis. J Alzheimers Dis 2020;73:1157-1166. 
+
+[8] Jin HA, McMillan CT, Yannatos I, Fisher L, Rhodes E, Jacoby SF, et al. Racial Differences in Clinical Presentation in Individuals Diagnosed With Frontotemporal Dementia. JAMA Neurol 2023;80:1191-1198. 
+
+[9] Pya N, Wood SN. Shape constrained additive models. Stat Comput 2015;25:543-559. 
+
+[10] Khorana A, Pareek A, Ollivier M, Madjarova SJ, Kunze KN, Nwachukwu BU, et al. Choosing the appropriate measure of central tendency: mean, median, or mode? Knee Surg Sports Traumatol Arthrosc 2023;31:1795. 
+
+[11] De Santi S, Pirraglia E, Barr W, Babb J, Williams S, Rogers K, et al. Robust and conventional neuropsychology norms: diagnosis and prediction of age-related cognitive decline. Neuropsychology 2008;22:469-484. 
+
+[12] Holtzer R, Goldin Y, Zimmerman M, Katz M, Buschke H, Lipton RB. Robust norms for selected neuropsychological tests in older adults. Arch Clin Neuropsychol 2008;23:531-541. 
+
+[13] Pedraza O, Lucas JA, Smith GE, Petersen RC, Graff-Radford NR, Ivnik RJ. Robust and expanded norms for the Dementia Rating Scale. Arch Clin Neuropsychol 2010;25:347-358. 
+
+[14] Hastie TJ, Tibshirani RJ. Generalized Additive Models. New York: Chapman and Hall/CRC; 1990. 
+
+[15] Wood S. Generalized Additive Models: An Introduction with R. 2nd ed. Boca Raton: Chapman and Hall/CRC; 2017. 
+
+[16] Weintraub, Sandra PhD*; Salmon, David PhD†; Mercaldo, Nathaniel MS‡; Ferris, Steven PhD§; Graff-Radford, Neill R. MD∥; Chui, Helena MD¶; Cummings, Jeffrey MD♯; DeCarli, Charles MD**; Foster, Norman L. MD††; Galasko, Douglas MD†; Peskind, Elaine MD‡‡; Dietrich, Woodrow BS‡; Beekly, Duane L. PhD‡; Kukull, Walter A. PhD‡; Morris, John C. MD§§. The Alzheimer's Disease Centers' Uniform Data Set (UDS): The Neuropsychologic Test Battery. Alzheimer Disease & Associated Disorders 23(2):p 91-101, April 2009. | DOI: 10.1097/WAD.0b013e318191c7dd 
+
+[17] Higgins, C., Ware, E.B., Hicken, M., Zawistowski, M., Kobayashi, L.C., Adkins-Jackson, P.A., Muhkerjee, B. and Bakulski, K.M. (2023), Persistent Systemic Inflammation Mediates the non-Hispanic Black vs non-Hispanic White Disparity in Cognitive Function: A Longitudinal Analysis. Alzheimer's Dement., 19: e072772. https://doi.org/10.1002/alz.072772 
+
+[18] Ardila, Alfredo. "Normal aging increases cognitive heterogeneity: analysis of dispersion in WAIS-III scores across age." Archives of Clinical Neuropsychology 22.8 (2007): 1003-1011. 
+
+[19] G. E. P. Box, D. R. Cox, An Analysis of Transformations, Journal of the Royal Statistical Society: Series B (Methodological), Volume 26, Issue 2, July 1964, Pages 211–243, https://doi.org/10.1111/j.2517-6161.1964.tb00553.x 
+
+[20] Venables, W. N. and Ripley, B. D. (2002) Modern Applied Statistics with S. Fourth edition. Springer. 
